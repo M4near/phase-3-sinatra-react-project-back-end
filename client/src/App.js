@@ -8,10 +8,14 @@ import NavBar from "./Components/NavBar";
 function App() {
   return (
     <Router>
-      {/* <NavBar /> */}
+      <NavBar /> 
+      <MuseumsContainer />
       <Switch>
+      <Route path="/">
+          <HomePage />
+        </Route>
         <Route path="/museums">
-          <MuseumsContainer />
+          <MuseumSelection />
         </Route>
         <Route path="/trips">
           <Trips />
