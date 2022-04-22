@@ -40,7 +40,7 @@ function TripCards({ tripsData, museumData, deleteVisit, deleteTrip, updateTrip 
     
 
     return (
-        <div>
+        <div className="backgrounds">
             <h1>{trip.trip_title}</h1>
             <button onClick={() => deleteTrip(trip.id)}>Delete this trip</button>
             <TripEditForm
@@ -49,6 +49,16 @@ function TripCards({ tripsData, museumData, deleteVisit, deleteTrip, updateTrip 
             />
 
             {renderVisits}
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 
         </div>
     );

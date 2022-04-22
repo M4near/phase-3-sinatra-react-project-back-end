@@ -12,10 +12,12 @@ function Trips({ tripsData, addTrip, updateTrip, deleteTrip, history }) {
   // }
 
   return (
+    <div className="backgrounds">
     <div className="trips-page">
       <div className="trips-button-parent">
         <div className="trips-button-child">
           {tripsData.map((trip) => <button className="trips-button" key={trip.id} onClick={() => history.push(`trips/${trip.id}`)}> {trip.trip_title} </button>)}
+        </div>
         </div>
       </div>
     </div>

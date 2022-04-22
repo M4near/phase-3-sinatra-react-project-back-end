@@ -23,6 +23,17 @@
   src: url(../public/fonts/Linli.ttf)
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
 .App {
   text-align: center;
 }
@@ -84,12 +95,12 @@
   margin: 5rem 5rem;
 }
 .backgrounds{
-  background-image: url("../public/cow.jpeg");
+  background-image: url("../public/emocoww.jpg");
 }
 
 .museum{
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  color: black;
+  color: ;
   /* display: grid; */
   padding-top: 75px;
   padding-bottom: 100px;
@@ -119,11 +130,12 @@ font-size: 40px;
 
 .museum-card{
 
-    margin-left: 20.5%; */
+    /* margin-left: 20.5%;  */
     width:350px;
     border-width: 3px 3px 5px 5px;
     border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
     transform: rotate(-2deg);
+}
 
 .trips-page{
   background: white;
