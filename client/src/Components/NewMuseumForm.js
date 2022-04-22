@@ -28,77 +28,77 @@ function NewMuseumForm({addMuseum}) {
 
     return (
         <>
-      <h1 className="New Museum">New Museum</h1>
+      <h1 className="newMuseum">New Museum</h1>
       <form
         onSubmit={handleSubmit}
-        className="New Museum Form"
+        className="newMuseumForm"
       >
-        <fieldset className="">
+        <fieldset className="newMuseumFieldset">
           <label className="" htmlFor="name">
             Museum Name:
           </label>
           <input
             type="text"
-            className=""
+            className="input"
             name="name"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </fieldset>
-        <fieldset className="">
+        <fieldset className="newMuseumFieldset">
           <label className="" htmlFor="Address">
             Street Address:
           </label>
           <input
             type="text"
-            className=""
+            className="input"
             name="address"
             id="address"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
           />
         </fieldset>
-        <fieldset className="">
+        <fieldset className="newMuseumFieldset">
           <label className="" htmlFor="zipcode">
             Zip Code:
           </label>
           <input
             type="text"
-            className=""
+            className="input"
             name="zipcode"
             id="zipcode"
             value={zipcode}
             onChange={(e) => setZipcode(e.target.value)}
           />
         </fieldset>
-        <fieldset className="">
+        <fieldset className="newMuseumFieldset">
           <label className="" htmlFor="image">
             Image Url:
           </label>
           <input
             type="text"
-            className=""
+            className="input"
             name="image"
             id="image"
             value={image}
             onChange={(e) => setImage(e.target.value)}
           />
         </fieldset>
-        <fieldset className="">
+        <fieldset className="newMuseumFieldset">
           <label className="" htmlFor="weburl">
             Website Url:
           </label>
           <input
             type="text"
-            className=""
+            className="input"
             name="weburl"
             id="weburl"
             value={weburl}
             onChange={(e) => setWeburl(e.target.value)}
           />
         </fieldset>
-        <fieldset className="">
+        <fieldset className="newMuseumFieldset">
           <label className="" htmlFor="city_id">
             City:
           </label>
@@ -137,13 +137,13 @@ function NewMuseumForm({addMuseum}) {
             onChange={(e) => setTrip_id(e.target.value)}
           />
         </fieldset> */}
-        <fieldset className="">
+        <fieldset className="newMuseumFieldset">
           <label className="" htmlFor="operating_hours">
             Operating Hours:
           </label>
           <input
             type="text"
-            className=""
+            className="input"
             name="operating_hours"
             id="operating_hours"
             value={operating_hours}
@@ -152,7 +152,7 @@ function NewMuseumForm({addMuseum}) {
         </fieldset>
 
         <button
-          className=""
+          className="addMuseum"
           type="submit"
         >
           Add Museum

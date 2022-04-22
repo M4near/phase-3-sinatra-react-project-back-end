@@ -37,6 +37,7 @@
   padding-right: 100px; */
   text-align: center;
   color: white;
+  height: 300px;
 
 }
 
@@ -64,8 +65,8 @@
 }
 
 .home-paragraph{
-  font-family:gomarice_nantoka_western;
-  font-size: 30;
+  font-family:Linli;
+  font-size: 40px;
 
 }
 
@@ -109,7 +110,7 @@ font-size: 40px;
 }
 
 .museum-card{
-    cursor: pointer;
+    /* cursor: pointer;
     width: 1400px;
     height: 900px;
     background: rgb(255, 255, 255);
@@ -118,11 +119,16 @@ font-size: 40px;
     transition: all .2s;
     box-shadow: 12px 12px 2px 1px rgba(200, 174, 72, 0.374);
     text-align: center;
+    margin-left: 20.5%; */
+    width:350px;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
   }
   
-  .museum-card:hover {
+  /* .museum-card:hover {
     box-shadow: -12px 12px 2px -1px rgba(222, 186, 29, 0.28);
-  }
+  } */
 
 .trips-page{
   background: white;
@@ -245,4 +251,33 @@ font-size: 40px;
 
 svg {
   display: none;
+}
+
+.newMuseumForm, .newMuseum {
+  margin-left: 46.5%;
+  position: center;
+  size: 230px;
+  width: 25%;
+  
+}
+
+.newMuseumFieldset {
+  width: 200px;
+  
+}
+
+.input {
+  width: auto;
+  size: auto;
+  
+}
+
+.editFormFields {
+  margin: 1vh;
+  position: relative;
+  size: 230px;
+}
+
+.addMuseum {
+  margin-left: 9%;
 }
