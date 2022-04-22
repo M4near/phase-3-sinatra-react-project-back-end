@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function MuseumCards({ museum, mapTripsData, tripsData, setTripsData, addVisit}) {
-    
+
+function MuseumCards({ museum, mapTripsData, tripsData, setTripsData, addVisit }) {
+
+
     let museum_id = museum.id
     let city_id = museum.city_id
 
@@ -12,39 +14,38 @@ function MuseumCards({ museum, mapTripsData, tripsData, setTripsData, addVisit})
             museum_id,
             city_id,
             trip_id
-        //   notes,
+            //   notes,
         })
-      };
+    };
 
     return (
-        <div className="card">
-            <div className="image">
+        <div className="museum-card">
+            <div className="museum-card-image">
                 <img src={museum.image} alt={museum.name} />
             </div>
             <div className="details">
-                <strong>{museum.name}</strong>
-                <br/>
+                <a href={`${museum.weburl}`}><strong className = "museum-name">{museum.name}</strong></a>
+                <br />
+                <div className="museum-text">
                 <strong>{museum.description} </strong>
                 <strong> {`${museum.address} ${museum.city.city_name}, ${museum.zipcode}, Texas`}</strong>
-                <br/>
-                <a href={`${museum.weburl}`}><strong> Museum's Website </strong></a>
-                <fieldset className="">
-                <label className="" htmlFor="tripsData">
-                    Add to Trip:
+                <br />
+                {/* <strong> Museum's Website </strong> */}
+                </div>
+                <fieldset className="dropdown">
+                    <label className="" htmlFor="tripsData">
+                        Add to Trip:
                     </label>
                     <select
-                    // value={trip}
-                    onChange={(e) => handleOnChange(e)}
+                        // value={trip}
+                        onChange={(e) => handleOnChange(e)}
                     >
+
                     <option>Select trip</option>
                     {tripsData.map((trip) => <option key={trip.id} value={trip.id}>{trip.trip_title}</option>)}
+                    
                     </select>
-            </fieldset>
-                {/* {favorited ? (
-                    <button onClick={handleStar} className="emoji-button favorite active">★</button>
-                ) : (
-                    <button onClick={handleStar} className="emoji-button favorite">☆</button>
-                )} */}
+                </fieldset>
             </div>
         </div>
     );
