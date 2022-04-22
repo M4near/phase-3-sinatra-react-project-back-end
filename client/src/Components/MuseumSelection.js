@@ -7,8 +7,10 @@ function MuseumSelection({ museumData, tripsData, setTripsData, addVisit }) {
 
 
   return (
+    <div className="backgrounds">
     <div className= "museum">
       {mapMuseumData}
+    </div>
     </div>
   );
 }

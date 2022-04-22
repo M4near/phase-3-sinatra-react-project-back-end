@@ -51,6 +51,10 @@
   text-decoration: none;
 }
 
+.navTitle{
+  font-size:110px;
+}
+
 .main-nav-active{
   color: white;
 }
@@ -79,6 +83,9 @@
   vertical-align: middle;
   margin: 5rem 5rem;
 }
+.backgrounds{
+  background-image: url("../public/cow.jpeg");
+}
 
 .museum{
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
@@ -91,6 +98,7 @@
   grid-gap: 100px;
   font-family: Linli;
   font-size: 50 px;
+  
 }
 
 .museum img{
@@ -110,25 +118,12 @@ font-size: 40px;
 }
 
 .museum-card{
-    /* cursor: pointer;
-    width: 1400px;
-    height: 900px;
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-    border: 10px solid rgba(255, 187, 0, 0.469);
-    transition: all .2s;
-    box-shadow: 12px 12px 2px 1px rgba(200, 174, 72, 0.374);
-    text-align: center;
+
     margin-left: 20.5%; */
     width:350px;
     border-width: 3px 3px 5px 5px;
     border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
     transform: rotate(-2deg);
-  }
-  
-  /* .museum-card:hover {
-    box-shadow: -12px 12px 2px -1px rgba(222, 186, 29, 0.28);
-  } */
 
 .trips-page{
   background: white;
@@ -171,87 +166,6 @@ font-size: 40px;
     padding: 13px 50px 13px;
 }}
 
-.dropdown {
-  position: relative;
-  width: 230px;
-  filter: url(#goo); 
-  &__face,
-  &__items {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 25px;
-  }
-
-  face {
-    display: block;
-    position: relative;
-  }
-
- items {
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 100%;
-    list-style: none;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    visibility: hidden;
-    z-index: -1;
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
-
-    :before {
-      content: "";
-      background-color: #fff;
-      position: absolute;
-      bottom: 100%;
-      right: 20%;
-      height: 40px;
-      width: 20px;
-    }
-  }
-
-  &__arrow {
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg) translateY(-50%);
-    transform-origin: right;
-  }
-
-  input {
-    display: none;
-
-    &:checked ~ .dropdown__items {
-      top: calc(100% + 25px);
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-}
-
-/* body {
-  background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd);
-  display: grid;
-  place-items: center;
-  font-family: "Lato", Arial, sans-serif;
-  height: 100vh;
-  margin: 0;
-} */
-
-* {
-  box-sizing: border-box;
-}
-
-svg {
-  display: none;
-}
 
 .newMuseumForm, .newMuseum {
   margin-left: 46.5%;
