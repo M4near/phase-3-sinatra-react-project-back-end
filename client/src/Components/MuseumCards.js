@@ -28,9 +28,9 @@ function MuseumCards({ museum, mapTripsData, tripsData, setTripsData, addVisit }
                 <br />
                 <div className="museum-text">
                 <strong>{museum.description} </strong>
-                <strong> {`${museum.address} ${museum.city.city_name}, ${museum.zipcode}, Texas`}</strong>
+                <strong> {`${museum.address}, ${museum.city.city_name}, ${museum.zipcode}, Texas`}</strong>
                 <br />
-                {/* <strong> Museum's Website </strong> */}
+                <strong> Operating Hours: {museum.operating_hours} </strong>
                 </div>
                 <fieldset className="dropdown">
                     <label className="" htmlFor="tripsData">

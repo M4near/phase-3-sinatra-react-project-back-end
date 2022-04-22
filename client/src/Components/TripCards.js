@@ -27,7 +27,7 @@ function TripCards({ tripsData, museumData, deleteVisit, deleteTrip, updateTrip}
         if (visitIds.includes(museum.id)){
             console.log(museum_id)
             console.log(dict[museum_id])
-            return (<div><MuseumCards key={museum.id} museum={museum} tripsData={tripsData}/>
+            return (<div className="museum"><MuseumCards key={museum.id} museum={museum} tripsData={tripsData}/>
             <button onClick={() => deleteVisit(dict[museum_id])}>Remove {museum.name} from Trip</button>
             </div>)
             
