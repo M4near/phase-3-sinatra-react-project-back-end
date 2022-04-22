@@ -24,13 +24,13 @@ function MuseumCards({ museum, mapTripsData, tripsData, setTripsData, addVisit }
                 <img src={museum.image} alt={museum.name} />
             </div>
             <div className="details">
-                <a href={`${museum.weburl}`}><strong className = "museum-name">{museum.name}</strong></a>
+                <a href={`${museum.weburl}`}><strong className="museum-name">{museum.name}</strong></a>
                 <br />
                 <div className="museum-text">
-                <strong>{museum.description} </strong>
-                <strong> {`${museum.address} ${museum.city.city_name}, ${museum.zipcode}, Texas`}</strong>
-                <br />
-                {/* <strong> Museum's Website </strong> */}
+                    <strong>{museum.description} </strong>
+                    <strong> {`${museum.address} ${museum.city.city_name}, ${museum.zipcode}, Texas`}</strong>
+                    <br />
+                    <strong> Operating Hours: {museum.operating_hours} </strong>
                 </div>
                 <fieldset className="dropdown">
                     <label className="" htmlFor="tripsData">
@@ -41,9 +41,9 @@ function MuseumCards({ museum, mapTripsData, tripsData, setTripsData, addVisit }
                         onChange={(e) => handleOnChange(e)}
                     >
 
-                    <option>Select trip</option>
-                    {tripsData.map((trip) => <option key={trip.id} value={trip.id}>{trip.trip_title}</option>)}
-                    
+                        <option>Select trip</option>
+                        {tripsData.map((trip) => <option key={trip.id} value={trip.id}>{trip.trip_title}</option>)}
+
                     </select>
                 </fieldset>
             </div>

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 function NavChild() {
     return <div className="navBar" >
-        <div>Texan Museum Tour</div>
+        <div className="nav-title">Texan Museum Tour</div>
         <NavLink exact to="/" className="main-nav" activeClassName="main-nav-active">
             <div className="navChild">Home</div>
         </NavLink>
