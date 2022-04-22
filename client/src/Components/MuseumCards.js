@@ -27,10 +27,12 @@ function MuseumCards({ museum, mapTripsData, tripsData, setTripsData, addVisit }
                 <a href={`${museum.weburl}`}><strong className="museum-name">{museum.name}</strong></a>
                 <br />
                 <div className="museum-text">
-                    <strong>{museum.description} </strong>
-                    <strong> {`${museum.address} ${museum.city.city_name}, ${museum.zipcode}, Texas`}</strong>
-                    <br />
-                    <strong> Operating Hours: {museum.operating_hours} </strong>
+
+                <strong>{museum.description} </strong>
+                <strong> {`${museum.address}, ${museum.city.city_name}, ${museum.zipcode}, Texas`}</strong>
+                <br />
+                <strong> Operating Hours: {museum.operating_hours} </strong>
+
                 </div>
                 <fieldset className="dropdown">
                     <label className="" htmlFor="tripsData">

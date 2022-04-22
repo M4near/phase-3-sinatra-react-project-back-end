@@ -118,21 +118,12 @@ font-size: 40px;
 }
 
 .museum-card{
-    cursor: pointer;
-    width: 1400px;
-    height: 900px;
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-    border: 10px solid rgba(255, 187, 0, 0.469);
-    transition: all .2s;
-    box-shadow: 12px 12px 2px 1px rgba(200, 174, 72, 0.374);
-    text-align: center;
-    margin-left: 25%;
-  }
-  
-  .museum-card:hover {
-    box-shadow: -12px 12px 2px -1px rgba(222, 186, 29, 0.28);
-  }
+
+    margin-left: 20.5%; */
+    width:350px;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
 
 .trips-page{
   background: white;
@@ -175,3 +166,32 @@ font-size: 40px;
     padding: 13px 50px 13px;
 }}
 
+
+.newMuseumForm, .newMuseum {
+  margin-left: 46.5%;
+  position: center;
+  size: 230px;
+  width: 25%;
+  
+}
+
+.newMuseumFieldset {
+  width: 200px;
+  
+}
+
+.input {
+  width: auto;
+  size: auto;
+  
+}
+
+.editFormFields {
+  margin: 1vh;
+  position: relative;
+  size: 230px;
+}
+
+.addMuseum {
+  margin-left: 9%;
+}

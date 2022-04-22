@@ -23,20 +23,21 @@ function TripCards({ tripsData, museumData, deleteVisit, deleteTrip, updateTrip 
 
 
     const renderVisits = museumData
-        .map((museum) => {
-            let museum_id = museum.id
-            if (visitIds.includes(museum.id)) {
-                console.log(museum_id)
-                console.log(dict[museum_id])
-                return (<div className="museum"><MuseumCards key={museum.id} museum={museum} tripsData={tripsData} />
-                    <button onClick={() => deleteVisit(dict[museum_id])}>Remove {museum.name} from Trip</button>
-                </div>)
 
-            } else {
-                return null
-            }
-        })
-
+    .map((museum) => {
+        let museum_id=museum.id
+        if (visitIds.includes(museum.id)){
+            console.log(museum_id)
+            console.log(dict[museum_id])
+            return (<div className="museum"><MuseumCards key={museum.id} museum={museum} tripsData={tripsData}/>
+            <button onClick={() => deleteVisit(dict[museum_id])}>Remove {museum.name} from Trip</button>
+            </div>)
+            
+        }else {
+            return null
+        }
+    })
+    
 
     return (
         <div>

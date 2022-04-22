@@ -20,18 +20,19 @@ function EditTripForm({ trip = {}, updateTrip }) {
 
   return (
     <>
+    <div className="">
       <h1 className="Edit Trip">Edit Trip: {trip.trip_title}</h1>
       <form
         onSubmit={handleSubmit}
-        className=""
+        className="editForm"
       >
-        <fieldset className="">
+        <fieldset className="newMuseumFieldset">
           <label className="" htmlFor="name">
             Trip Title:
           </label>
           <input
             type="text"
-            className=""
+            className="input"
             name="name"
             id="name"
             value={trip_title}
@@ -46,6 +47,7 @@ function EditTripForm({ trip = {}, updateTrip }) {
           Update
         </button>
       </form>
+      </div>
     </>
   );
 }

@@ -19,15 +19,15 @@ function NewTripForm({addTrip}) {
       <h1 className="new-trip-form-title">New Trip</h1>
       <form
         onSubmit={handleSubmit}
-        className="new-trip-form"
+        className="editForm"
       >
-        <fieldset className="">
-          <label className="new-trip-label" htmlFor="name">
+        <fieldset className="newMuseumFieldset">
+          <label className="" htmlFor="name">
             Trip Title:
           </label>
           <input
             type="text"
-            className=""
+            className="input"
             name="name"
             id="name"
             value={trip_title}

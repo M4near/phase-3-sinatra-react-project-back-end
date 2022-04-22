@@ -119,10 +119,13 @@ function App() {
       .then(res => res.json())
       .then(deletedVisit => {
         console.log('deleted', deletedVisit.id)
-        // window.location.reload()
         history.push(`/trips`)
+        window.location.reload()
       });
-}
+    }
+  
+  
+
 
   const addVisit = (formData) => {
     console.log(formData)
